@@ -1,0 +1,15 @@
+<%- include('includes/head') %>
+</head>
+
+<body>
+    <h1>Users List</h1>
+    <% if(users.length > 0){ %>
+        <ul>
+            <% for(let user of users){ %>
+                <li><%= user.name %></li>
+            <% } %>
+        </ul>
+    <% }else{ %>
+        <h3>No Users!</h3>
+    <% } %>
+</body>
